@@ -16,7 +16,7 @@ Always write a clear log message for your commits. One-line messages are fine fo
     > 
     > A paragraph describing what changed and its impact."
 
-## [Coding conventions](http://github.com/noud/github-community-templates/blob/master/README-Coding-conventions.md)
+## [Coding conventions](https://github.com/noud/github-community-templates/blob/master/README-coding.md#data-definition)
 
 Start reading the code and you'll get the hang of it. The code is optimized for readability.
 
