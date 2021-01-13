@@ -44,17 +44,17 @@ regex {label: "bool, null"}
 +polymorphic_noun_id {label: "bigint, not null"}
 +non_composition_proxy_noun_id {label: "bigint, not null"}
 
-[default_nouns] {bgcolor: "#d0e0d0"}
-*id {label: "bigint, not null"}
-singular {label: "string, not null"}
-+rule_id {label: "int, not null"}
-irregular {label: "bool, not null"}
-
 [irregular_nouns] {bgcolor: "#d0e0d0"}
 *id {label: "int, not null"}
 singular {label: "string, null"}
 plural {label: "string, null"}
 +rule_id {label: "int, not null"}
+
+[normal_nouns] {bgcolor: "#d0e0d0"}
+*id {label: "bigint, not null"}
+word {label: "string, not null"}
++rule_id {label: "int, not null"}
+irregular {label: "bool, not null"}
 
 ### adjectives
 
@@ -74,8 +74,8 @@ url {label: "string, not null"}
 +rule_id {label: "int, not null"}
 +reference_id {label: "int, not null"}
 
-[default_noun_reference]
-+default_noun_id {label: "bigint, not null"}
+[normal_noun_reference]
++normal_noun_id {label: "bigint, not null"}
 +reference_id {label: "int, not null"}
 
 [irregular_noun_reference]
@@ -108,22 +108,22 @@ noun_id {label: "bigint, not null"}
 # relations
 
 rules 1--1 results {label: "result"}
-adds 1--1 results {label: "rule"}
-replaces 1--1 results {label: "rule"}
+results 1--1 adds {label: "add"}
+results 1--1 replaces {label: "replace"}
 
 adjective_nouns 1--1 adjectives {label: "adjective"}
 adjective_nouns 1--1 polymorphic_nouns {label: "polymorphic_noun"}
 composition_nouns 1--1 polymorphic_nouns {label: "polymorphic_noun"}
 composition_nouns 1--1 non_composition_proxy_nouns {label: "non_composition_proxy_noun"}
-default_nouns 1--1 rules {label: "rule"}
+normal_nouns 1--1 rules {label: "rule"}
 irregular_nouns 1--1 rules {label: "rule"}
 
 # pivot relations
 
 rule_reference *--1 rules {label: "rule"}
 rule_reference *--1 references {label: "reference"}
-default_noun_reference *--1 default_nouns {label: "default_noun"}
-default_noun_reference *--1 references {label: "reference"}
+normal_noun_reference *--1 normal_nouns {label: "normal_noun"}
+normal_noun_reference *--1 references {label: "reference"}
 irregular_noun_reference *--1 irregular_nouns {label: "irregular_noun"}
 irregular_noun_reference *--1 references {label: "reference"}
 composition_noun_reference *--1 composition_nouns {label: "composition_noun"}
