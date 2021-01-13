@@ -1,5 +1,5 @@
 # [Noun](http://en.wikipedia.org/wiki/Noun) [database]()
-![nouns](./doc/nouns.png?raw=true "nouns")
+![nouns](./doc/nouns.mvc.png?raw=true "nouns")
 ## Objective
 Have one inflector in multiple environments such as JavaScript and PHP.
 ## Back end
