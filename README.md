@@ -3,4 +3,4 @@
 ## Objective
 Have one inflector in multiple environments such as JavaScript and PHP.
 ## Back end
-- [Laravel](http://github.com/noud/noun-laravel/blob/master/README.md)
+- [Laravel](http://github.com/noud/nouns-laravel/blob/master/README.md)
