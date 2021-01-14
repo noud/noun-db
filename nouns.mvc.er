@@ -1,4 +1,4 @@
-title {label: "noun"}
+title {label: "nouns"}
 
 # tables
 
@@ -48,7 +48,7 @@ regex {label: "bool, null"}
 *id {label: "int, not null"}
 singular {label: "string, null"}
 plural {label: "string, null"}
-+rule_id {label: "int, not null"}
++rule_id {label: "int, null"}
 
 [normal_nouns] {bgcolor: "#d0e0d0"}
 *id {label: "bigint, not null"}
