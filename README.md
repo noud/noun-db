@@ -1,4 +1,4 @@
-# [Noun](http://en.wikipedia.org/wiki/Noun) [database]()
+# [Noun](http://en.wikipedia.org/wiki/Noun)s [database]()
 ![nouns](./doc/nouns.mvc.png?raw=true "nouns")
 ## Objective
 Have one inflector in multiple environments such as JavaScript and PHP.
