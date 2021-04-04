@@ -1,6 +1,6 @@
 "id","name","result_id","inflector_irregular","created_at","updated_at"
 "1","en","1","1",NULL,NULL
-"2","english","1","1",NULL,NULL
+"2","english","2","1",NULL,NULL
 "3","emphasis","1","1",NULL,NULL
 "4","vowel_change","1","1",NULL,NULL
 "5","stack","1","1",NULL,NULL
