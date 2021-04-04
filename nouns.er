@@ -9,7 +9,6 @@ title {label: "nouns"}
 [rules] {bgcolor: "#fcecec"}
 *id {label: "int, not null"}
 name {label: "string, not null"}
-+result_id {label: "int, not null"}
 inflector_irregular {label: "bool, not null"}
 #to_singular {label: "text, null"}
 #to_plural {label: "text, null"}
@@ -18,6 +17,7 @@ inflector_irregular {label: "bool, not null"}
 
 [results] {bgcolor: "#fcecec"}
 *id {label: "int, not null"}
++rule_id {label: "int, not null"}
 empty {label: "bool, null"}
 +add_id {label: "int, null"}
 +replace_id {label: "int, null"}
@@ -107,7 +107,7 @@ noun_id {label: "bigint, not null"}
 
 # relations
 
-rules 1--1 results {label: "result"}
+results *--1 rules {label: "rule"}
 results 1--1 adds {label: "add"}
 results 1--1 replaces {label: "replace"}
 
