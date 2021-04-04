@@ -2,6 +2,6 @@
 1,'ie','iën',NULL,NULL,NULL
 2,'rie','rieën',NULL,NULL,NULL
 3,'ee','eeën',NULL,NULL,NULL
-4,'id','eden',true,NULL,NULL
-5,'ip','epen',true,NULL,NULL
-6,'ad','eden',true,NULL,NULL
+4,'id','eden',1,NULL,NULL
+5,'ip','epen',1,NULL,NULL
+6,'ad','eden',1,NULL,NULL
